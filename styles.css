@@ -25,3 +25,9 @@
 @media(max-width:650px){.photo-dialog{padding:12px}.photo-dialog-top h2{font-size:18px}.price .per-person{font-size:15px}}
 
 .location-note{font-size:11px;color:var(--muted);line-height:1.5}
+
+/* Capacidad insuficiente destacada por el organizador. */
+.house-card.capacity-warning{border:2px solid #b42318;background:#fff4f2}
+.house-card.capacity-warning.selected{border-color:#b42318;box-shadow:0 0 0 2px #b4231833}
+.capacity-warning .house-name,.capacity-warning .guest-count{color:#a21c16}
+.capacity-warning-label{margin:0 0 16px;padding:10px 12px;border-radius:8px;background:#b42318;color:#fff;font-weight:700;line-height:1.5}

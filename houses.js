@@ -145,5 +145,159 @@ window.HOUSE_CATALOG = [
     "maps_query": "Padul, Granada, España",
     "location_note": "Ubicación aproximada: municipio de Padul. Dirección exacta pendiente.",
     "booking_conditions": "Precio aportado: 616 € por las dos noches. El reparto mostrado se calcula entre las 13 personas del grupo. El enlace de HomeToGo consulta 12 adultos y la captura muestra 12 plazas en camas; el sofá no se describe como sofá cama. Confirma la posibilidad de alojar a 13 adultos y cualquier suplemento antes de reservar."
+  },
+  {
+    "name": "Chalet Venta del Aire · Cortijo Terrón",
+    "location": "Camino Barranco Juan Bueno s/n, Lanjarón (Granada)",
+    "capacity": 15,
+    "description": "Casa de alquiler íntegro con piscina privada, terraza con barbacoa, jardín, salón comedor con chimenea y cocina equipada. Distribución de la captura: dormitorio 1 con una cama doble; dormitorio 2 con una cuna, una individual y una doble; dormitorio 3 con una individual y una cama de plaza y media; comedor con un sofá cama; dormitorio 4 con tres literas.",
+    "amenities": [
+      "4 dormitorios según distribución",
+      "Piscina privada",
+      "Barbacoa",
+      "Chimenea",
+      "Admite mascotas"
+    ],
+    "image_url": "assets/venta-del-aire.webp",
+    "link_url": "https://www.escapadarural.com/casa-rural/granada/chalet-venta-del-aire-cortijo-terron?dateIn=22-01-2027&dateOut=24-01-2027&capacity=12",
+    "id": "20270122-0000-4000-8000-000000000007",
+    "price_per_night": 300,
+    "display_order": 7,
+    "active": true,
+    "total_price": 600,
+    "maps_query": "Camino Barranco Juan Bueno s/n, Lanjarón, Granada",
+    "booking_conditions": "Precio aportado: 600 € por las dos noches, del 22 al 24 de enero de 2027; reparto entre 13 personas. El anuncio indica hasta 15 plazas, pero el enlace consulta 12 personas: confirma el precio para 13 adultos. La distribución detallada muestra 4 dormitorios y un comedor con sofá cama, aunque la cabecera del anuncio indica 5 dormitorios. Cancelación y posibles suplementos pendientes de confirmar."
+  },
+  {
+    "name": "Cortijo Gran Capitán",
+    "location": "Camino de la Virgen s/n, Íllora (Granada)",
+    "capacity": 12,
+    "description": "Casa rural restaurada en Íllora, en los Montes Orientales de Granada. Tiene 5 dormitorios (2 de matrimonio, 2 triples y 1 doble) y 2 baños, además de comedor, cocina equipada y salón. En el exterior dispone de piscina y pérgola. Capacidad máxima anunciada: 12 personas; falta confirmar alojamiento para la persona número 13.",
+    "amenities": [
+      "5 dormitorios",
+      "2 baños",
+      "Piscina",
+      "Pérgola",
+      "13.ª plaza por confirmar"
+    ],
+    "image_url": "assets/gran-capitan.webp",
+    "link_url": "https://www.escapadarural.com/casa-rural/granada/cortijo-gran-capitan?dateIn=22-01-2027&dateOut=24-01-2027&capacity=12",
+    "id": "20270122-0000-4000-8000-000000000008",
+    "price_per_night": 325,
+    "display_order": 8,
+    "active": true,
+    "total_price": 650,
+    "maps_query": "Camino de la Virgen s/n, Íllora, Granada",
+    "booking_conditions": "Precio aportado: 650 € por las dos noches, del 22 al 24 de enero de 2027. El reparto mostrado es entre las 13 personas del grupo (50 € por persona), pero el anuncio admite un máximo de 12 y el enlace consulta 12 personas. Confirma con el alojamiento si puede admitir a 13 adultos y el precio correspondiente. Cancelación y posibles suplementos pendientes de confirmar."
+  },
+  {
+    "name": "Casa El Tío Patricio",
+    "location": "Cortijo El Hachazo, s/n, Montillana (Granada)",
+    "capacity": 15,
+    "description": "Vivienda del Cortijo El Hachazo, entre Montillana y Trujillos. Salón cocina equipado de 54 m² y WiFi. Tiene 6 dormitorios: 4 en planta baja y 2 en la primera; 4 con cama de matrimonio, uno con 3 camas de 105 cm y el sexto con una cama de matrimonio y 2 de 90 cm. Cinco dormitorios tienen baño completo y hay un aseo adicional. Calefacción en todos los dormitorios y aire acondicionado en 3.",
+    "amenities": [
+      "6 dormitorios",
+      "5 baños y 1 aseo",
+      "Salón cocina de 54 m²",
+      "WiFi",
+      "Calefacción"
+    ],
+    "image_url": "assets/tio-patricio.webp",
+    "link_url": "https://www.escapadarural.com/casa-rural/granada/casa-el-tio-patricio?dateIn=22-01-2027&dateOut=24-01-2027&capacity=12",
+    "id": "20270122-0000-4000-8000-000000000009",
+    "price_per_night": 400,
+    "display_order": 9,
+    "active": true,
+    "total_price": 800,
+    "maps_query": "Cortijo El Hachazo, Montillana, Granada",
+    "booking_conditions": "Precio aportado: 800 € por las dos noches, del 22 al 24 de enero de 2027; reparto entre las 13 personas del grupo (61,54 € por persona). El anuncio indica hasta 15 plazas, pero el enlace consulta 12 personas: confirma el precio para 13 adultos. Cancelación y posibles suplementos pendientes de confirmar."
+  },
+  {
+    "name": "Casa Rural del siglo XVI · Guadix",
+    "location": "Paulenca, Guadix (Granada)",
+    "capacity": null,
+    "description": "Casa rural del siglo XVI anunciada para más de 16 viajeros, con 8 dormitorios, 13 camas y 6 baños. Situada en Paulenca, a unos 2 km de Guadix, con vistas a Sierra Nevada. Cuenta con cocina, WiFi, aparcamiento dentro del recinto, dos patios, terraza, barbacoa y horno moruno. Piscina privada con zona de descanso en verano. Admite mascotas previo aviso.",
+    "amenities": [
+      "8 dormitorios",
+      "13 camas",
+      "6 baños",
+      "WiFi",
+      "Parking gratis"
+    ],
+    "image_url": "assets/guadix-airbnb.jpg",
+    "link_url": "https://www.airbnb.es/rooms/13075693?adults=12&check_in=2027-01-22&check_out=2027-01-24",
+    "id": "20270122-0000-4000-8000-000000000010",
+    "price_per_night": 460,
+    "display_order": 10,
+    "active": true,
+    "total_price": 920,
+    "maps_query": "Paulenca, Guadix, Granada",
+    "location_note": "Ubicación aproximada: Paulenca, Guadix. Dirección exacta pendiente. Capacidad anunciada: más de 16 viajeros.",
+    "booking_conditions": "Precio aportado: 920 € por las dos noches, del 22 al 24 de enero de 2027; reparto entre 13 personas (70,77 € por persona). El enlace consulta 12 adultos: confirma el precio para 13. La piscina se describe para verano; su disponibilidad en enero está pendiente de confirmar. La leña se paga aparte y las mascotas requieren aviso previo. Cancelación y otros posibles suplementos pendientes de confirmar."
+  },
+  {
+    "name": "Cortijo el Contarin · Salinas",
+    "location": "Entorno de Salinas, Archidona (Málaga)",
+    "capacity": 13,
+    "description": "Casa de dos plantas en una finca de 18 hectáreas rodeada de encinas, a 5 minutos de Salinas según el anuncio. Tiene 5 dormitorios y 4 baños. En la primera planta: un dormitorio con cama de matrimonio e individual, otro con 4 individuales y dos con 2 individuales cada uno; 3 baños con bañera, 2 en suite. En la planta baja: dormitorio con 2 individuales, baño con ducha, salón comedor con chimenea y cocina equipada. Piscina privada, barbacoa y porche.",
+    "amenities": [
+      "5 dormitorios",
+      "4 baños",
+      "Piscina privada",
+      "Barbacoa",
+      "Chimenea"
+    ],
+    "image_url": "assets/contarin.jpg",
+    "link_url": "https://www.airbnb.es/rooms/1264970794514746776?adults=13&check_in=2027-01-22&check_out=2027-01-24",
+    "id": "20270122-0000-4000-8000-000000000011",
+    "price_per_night": 406,
+    "display_order": 11,
+    "active": true,
+    "total_price": 812,
+    "maps_query": "Salinas, Archidona, Málaga",
+    "location_note": "Ubicación aproximada: entorno de Salinas, Archidona (Málaga). Dirección exacta pendiente.",
+    "booking_conditions": "Precio aportado: 812 € por las dos noches, del 22 al 24 de enero de 2027, para el grupo de 13 personas (62,46 € por persona). El anuncio y el enlace indican 13 viajeros. Cancelación, posibles suplementos y disponibilidad de la piscina en enero pendientes de confirmar."
+  },
+  {
+    "name": "Villa en la naturaleza · Lecrín",
+    "location": "Lecrín, Granada",
+    "capacity": null,
+    "description": "Villa rural en el entorno de Sierra Nevada, anunciada para más de 16 viajeros. Tiene 9 dormitorios con baño privado, 15 camas y 9 baños. Cuenta con cocina, WiFi, aparcamiento gratuito, patio central, piscina, barbacoa y horno de pizzas. El alquiler incluye el uso exclusivo de la planta baja y sus espacios exteriores; el apartamento superior queda vacío y se alquila aparte si se solicita.",
+    "amenities": [
+      "9 dormitorios",
+      "9 baños privados",
+      "15 camas",
+      "Piscina",
+      "Barbacoa"
+    ],
+    "image_url": "assets/lecrin-villa.jpg",
+    "link_url": "https://www.airbnb.es/rooms/1426672715481377050?adults=13&check_in=2027-01-22&check_out=2027-01-24",
+    "id": "20270122-0000-4000-8000-000000000012",
+    "price_per_night": 675,
+    "display_order": 12,
+    "active": true,
+    "total_price": 1350,
+    "maps_query": "Lecrín, Granada, España",
+    "location_note": "Ubicación aproximada: municipio de Lecrín. Dirección exacta pendiente. Capacidad anunciada: más de 16 viajeros.",
+    "booking_conditions": "Precio aportado: 1.350 € por las dos noches, del 22 al 24 de enero de 2027, para 13 adultos (103,85 € por persona). Electricidad principalmente solar y con baterías, de disponibilidad limitada y con sistema de apoyo. Los últimos 2,5 km de acceso son de grava; el anfitrión indica que no hace falta todoterreno, pero puede no ser adecuado para coches muy bajos. Comercios a unos 15 minutos en coche. El apartamento superior no está incluido. Cancelación, posibles suplementos y disponibilidad de la piscina en enero pendientes de confirmar."
+  },
+  {
+    "name": "CASA PRIMER AÑO",
+    "location": "Íllora, Granada",
+    "capacity": 10,
+    "description": "Casa del primer año en Íllora. Tiene capacidad para 10 personas; el grupo es de 13, por lo que faltan 3 plazas.",
+    "amenities": [
+      "10 plazas",
+      "Faltan 3 plazas para el grupo"
+    ],
+    "image_url": "",
+    "link_url": "",
+    "id": "20270122-0000-4000-8000-000000000013",
+    "price_per_night": 250,
+    "display_order": 13,
+    "active": true,
+    "total_price": 500,
+    "capacity_warning": "Solo 10 personas · Faltan 3 plazas para el grupo",
+    "booking_conditions": "Precio aportado: 500 € por las dos noches, del 22 al 24 de enero de 2027. El reparto mostrado se calcula entre las 13 personas del grupo (38,46 € por persona), pero la casa solo dispone de 10 plazas."
   }
 ];

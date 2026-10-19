@@ -1,6 +1,6 @@
 # La Casa de las Carcasas
 
-Votación de seis casas rurales para el 22–24 de enero de 2027. Web estática sin compilación; Supabase guarda los participantes y sus notas de 1 a 5 estrellas.
+Votación de trece casas rurales para el 22–24 de enero de 2027. Web estática sin compilación; Supabase guarda los participantes y sus notas de 1 a 5 estrellas.
 
 ## Acceso por correo
 
@@ -28,6 +28,13 @@ En **Supabase → SQL Editor → New query**, ejecuta las migraciones pendientes
 8. `migrations/20261019_nogueras_details.sql` (precio, dirección y características de Las Nogueras).
 9. `migrations/20261019_estaquilla_details.sql` (precio, dirección y características de La Estaquilla).
 10. `migrations/20261019_hometogo_details.sql` (precio, foto, ubicación y distribución de la casa de HomeToGo).
+11. `migrations/20261019_venta_del_aire.sql` (alta de Chalet Venta del Aire · Cortijo Terrón).
+12. `migrations/20261019_gran_capitan.sql` (alta de Cortijo Gran Capitán).
+13. `migrations/20261019_tio_patricio.sql` (alta de Casa El Tío Patricio).
+14. `migrations/20261019_guadix_airbnb.sql` (alta de la casa rural del siglo XVI en Guadix).
+15. `migrations/20261019_contarin.sql` (alta de Cortijo el Contarin, en el entorno de Salinas).
+16. `migrations/20261019_lecrin_villa.sql` (alta de Villa en la naturaleza, en Lecrín).
+17. `migrations/20261019_casa_primer_ano.sql` (alta de CASA PRIMER AÑO, destacada en rojo por sus 10 plazas).
 
 Ejecuta solo las migraciones que te falten. Después recarga la web. Mantén activos **Anonymous Sign-Ins**: se utilizan para la sesión técnica de cada navegador, mientras el participante permanente se identifica por correo en la tabla `participants`.
 
@@ -68,7 +75,7 @@ Los antiguos `voter_profiles`, `votes` y `ratings` se conservan como histórico.
 
 ## Casas y fotos
 
-Las seis candidatas están en `houses.js` y en `migrations/20261019_real_houses.sql`; sus IDs y datos deben coincidir. Para cambiar el catálogo, edita ambos y aplica la migración. La foto del inicio es `assets/inicio.jpg`.
+Las trece candidatas están en `houses.js`; `supabase.sql` y las migraciones mantienen el catálogo de Supabase. Sus IDs y datos deben coincidir. Para cambiar el catálogo, actualiza la ficha local y añade una migración. La foto del inicio es `assets/inicio.jpg`.
 
 Casa Rural Baza: 900 € por las dos noches para el grupo, impuestos y cargos incluidos según la captura del organizador; 900 / 13 = 69,23 € por persona, redondeado a céntimos. El reparto es común para todas las casas: `window.TRIP_CONFIG` fija 13 personas y 2 noches. Las tarjetas muestran `total_price` o, si solo hay tarifa nocturna, `price_per_night × 2`. El resto de precios están pendientes: aparece «Consultar». El enlace de HomeToGo consulta 12 adultos: confirma si admite a todo el grupo.
 
@@ -131,3 +138,57 @@ Precio aportado: 616 € por dos noches, 47,38 € por persona al repartir entre
 La captura muestra 5 dormitorios: dos con una cama doble cada uno, uno con dos camas individuales, uno con dos dobles y uno con una doble grande. Total: cinco camas dobles y dos individuales (12 plazas en camas). Además, salón con sofá, cocina y dos baños con ducha, bidé, lavabo y agua fría y caliente. No se considera el sofá una plaza extra porque no se indica que sea sofá cama. El enlace está configurado para 12 adultos: falta confirmar la persona número 13 y cualquier suplemento. No se atribuyen servicios que no aparecen en la captura.
 
 Tiempo orientativo hasta el municipio: 25 minutos desde Granada centro, a partir de referencias de rutas de unos 23 minutos (https://www.distanciasentreciudades.com/distancia-granada-a-padul). No es un tiempo medido hasta la casa. Para sincronizar estos datos con Supabase conservando sus notas, ejecuta `migrations/20261019_hometogo_details.sql`.
+
+## Séptima candidata: Chalet Venta del Aire · Cortijo Terrón
+
+Precio aportado: 600 € por las dos noches del 22–24/01/2027, 46,15 € por persona entre 13. Dirección: Camino Barranco Juan Bueno s/n, Lanjarón (Granada). La foto `assets/venta-del-aire.webp` procede del anuncio de EscapadaRural aportado, consultado el 19/10/2026.
+
+Se conserva la distribución de la captura: dormitorio 1 con una doble; dormitorio 2 con cuna, individual y doble; dormitorio 3 con individual y cama de plaza y media; comedor con sofá cama; dormitorio 4 con tres literas. La cabecera del anuncio indica 5 dormitorios, pero el detalle muestra 4 y el comedor. El anuncio indica hasta 15 plazas; el enlace consulta 12 personas, por lo que hay que confirmar los 600 € para 13 adultos. No se atribuyen condiciones de cancelación ni tiempos de viaje no comprobados.
+
+Ejecuta `migrations/20261019_venta_del_aire.sql` en Supabase → SQL Editor para activar la nueva candidata en la votación. La ficha aparece al recargar; el guardado requiere que su ID exista también en Supabase. La migración es repetible y conserva las valoraciones existentes.
+
+## Octava candidata: Cortijo Gran Capitán
+
+Precio aportado: 650 € por las dos noches del 22–24/01/2027, 50 € por persona entre las 13 personas del grupo. Dirección: Camino de la Virgen s/n, Íllora (Granada). La captura y el anuncio indican un máximo de 12 plazas: hay que confirmar con el alojamiento si admite a 13 adultos y el precio correspondiente.
+
+Tiene 5 dormitorios (2 de matrimonio, 2 triples y 1 doble), 2 baños, comedor, cocina equipada, salón, piscina y pérgola. La foto `assets/gran-capitan.webp` procede del anuncio aportado de EscapadaRural, consultado el 19/10/2026. No se atribuyen condiciones de cancelación ni tiempos de viaje no comprobados.
+
+Ejecuta `migrations/20261019_gran_capitan.sql` en Supabase → SQL Editor para registrar la nueva candidata y permitir guardar las notas. La migración es repetible y conserva las valoraciones existentes.
+
+## Novena candidata: Casa El Tío Patricio
+
+Precio aportado: 800 € por las dos noches del 22–24/01/2027, 61,54 € por persona entre 13. Dirección: Cortijo El Hachazo, s/n, Montillana (Granada). El anuncio indica hasta 15 plazas, pero el enlace consulta 12 personas; hay que confirmar el precio para 13 adultos.
+
+La ficha conserva la distribución de la captura: 6 dormitorios, 4 en planta baja y 2 en primera planta; 4 con cama de matrimonio, uno con 3 camas de 105 cm y el sexto con una de matrimonio y 2 de 90 cm. Cinco baños completos y un aseo adicional. Salón cocina de 54 m², WiFi, calefacción en todos los dormitorios y aire acondicionado en 3. La foto `assets/tio-patricio.webp` procede del anuncio aportado de EscapadaRural, consultado el 19/10/2026. No se atribuyen condiciones de cancelación ni tiempos de viaje no comprobados.
+
+Ejecuta `migrations/20261019_tio_patricio.sql` en Supabase → SQL Editor para registrar la nueva candidata y permitir guardar las notas. La migración es repetible y conserva las valoraciones existentes.
+
+## Décima candidata: Casa Rural del siglo XVI · Guadix
+
+Anuncio de Airbnb 13075693, «Preciosa y tranquila Casa Rural del siglo XVI», consultado el 19/10/2026. Precio aportado: 920 € por las dos noches del 22–24/01/2027; reparto entre 13: 70,77 € por persona. El enlace consulta 12 adultos: hay que confirmar el precio para 13.
+
+La ficha anuncia más de 16 viajeros, 8 dormitorios, 13 camas y 6 baños. Se deja la capacidad numérica exacta sin fijar. Está en Paulenca, a unos 2 km de Guadix; no se conoce la dirección exacta, por lo que Maps apunta a Paulenca. Tiene cocina, WiFi, aparcamiento, patios, terraza, barbacoa y horno moruno. La piscina se describe para verano, sin confirmar disponibilidad en enero. La leña corre a cargo de los huéspedes y las mascotas requieren aviso previo. La foto `assets/guadix-airbnb.jpg` procede del anuncio.
+
+Ejecuta `migrations/20261019_guadix_airbnb.sql` en Supabase → SQL Editor para registrar la nueva candidata y permitir guardar las notas. La migración es repetible y conserva las valoraciones existentes.
+
+## Undécima candidata: Cortijo el Contarin · Salinas
+
+Airbnb 1264970794514746776, «Cortijo el Contarin Archidona by Ruralidays», consultado el 19/10/2026. Precio aportado: 812 € por las dos noches del 22–24/01/2027 para 13 personas; reparto: 62,46 € por persona. El anuncio confirma 13 viajeros, 5 dormitorios, 12 camas y 4 baños.
+
+Casa de dos plantas en una finca de 18 hectáreas. Primera planta: dormitorio con cama de matrimonio e individual, otro con 4 individuales y dos con 2 individuales cada uno; 3 baños con bañera, 2 en suite. Planta baja: dormitorio con 2 individuales, baño con ducha, salón comedor con chimenea y cocina equipada. Piscina privada, barbacoa y porche. Según el anuncio, Salinas queda a 5 minutos; el municipio publicado es Archidona (Málaga). Se indica ubicación aproximada y dirección exacta pendiente. La foto `assets/contarin.jpg` procede del anuncio.
+
+Ejecuta `migrations/20261019_contarin.sql` en Supabase → SQL Editor para registrar la nueva candidata y permitir guardar las notas. La migración es repetible y conserva las valoraciones existentes. Cancelación, suplementos y disponibilidad de la piscina en enero no comprobados.
+
+## Duodécima candidata: Villa en la naturaleza · Lecrín
+
+Airbnb 1426672715481377050, consultado el 19/10/2026. Precio aportado: 1.350 € por las dos noches del 22–24/01/2027 para 13 adultos; reparto: 103,85 € por persona. El anuncio indica más de 16 viajeros, 9 dormitorios con baño privado, 15 camas y 9 baños. La capacidad numérica exacta y la dirección quedan pendientes; Maps apunta al municipio de Lecrín.
+
+Tiene cocina, WiFi, aparcamiento gratuito, patio, piscina, barbacoa y horno de pizzas. El alquiler incluye planta baja y exteriores en exclusiva; el apartamento superior queda vacío y se alquila aparte si se solicita. La electricidad procede principalmente de placas solares y baterías, con disponibilidad limitada y sistema de apoyo. Los últimos 2,5 km de acceso son de grava y pueden no ser adecuados para coches muy bajos; el anuncio no exige todoterreno. Comercios a unos 15 minutos en coche. La foto `assets/lecrin-villa.jpg` procede del anuncio. Cancelación, suplementos y piscina en enero pendientes de confirmar.
+
+Ejecuta `migrations/20261019_lecrin_villa.sql` en Supabase → SQL Editor para registrar la nueva candidata y permitir guardar las notas. La migración es repetible y conserva las valoraciones existentes.
+
+## Decimotercera candidata: CASA PRIMER AÑO
+
+Opción sin anuncio ni foto, en Íllora, por 500 € las dos noches. Capacidad aportada: 10 personas. La tarjeta aparece en rojo con el aviso «Solo 10 personas · Faltan 3 plazas para el grupo». El precio por persona mantiene el reparto común entre 13 (38,46 €). La propiedad `capacity_warning` activa el borde, nombre y aviso en rojo, también al seleccionar la casa.
+
+Ejecuta `migrations/20261019_casa_primer_ano.sql` en Supabase → SQL Editor para registrar la candidata y habilitar el guardado de las notas. Conserva las otras casas y sus valoraciones.
